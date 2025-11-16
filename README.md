@@ -13,6 +13,13 @@ in root folder of home app:
 
 NEXT_PUBLIC_ASTRO_URL="http://localhost:3001"
 NEXT_PUBLIC_ASTRONOMICAL_URL="http://localhost:3002"
+NEXT_PUBLIC_API_URL="http://localhost:8000"
+
+in root folder of api app in packages folder:
+- create .env file
+- copy and paste, local URL vars:
+
+OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 in root dir of repo:
 - npm i

@@ -4,10 +4,10 @@ import styles from './button.module.css';
 type DSButtonProps = {
   id: string;
   children?: React.ReactNode;
-  type: any;
+  type?: any;
   disabled?: boolean;
   onClick: any
-  icon: any
+  icon?: any
 }
 
 const DSButton: React.FC<DSButtonProps> = ({
@@ -23,7 +23,7 @@ const DSButton: React.FC<DSButtonProps> = ({
     <Button
         id={id || 'default-button'}
         type={type || 'default'}
-        icon={icon}
+        icon={icon || null}
         disabled={disabled}
         className={styles['toggle-button']}
         onClick={onClick}

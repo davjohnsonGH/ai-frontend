@@ -20,5 +20,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@openai/agents": "^0.3.2",
+    "zod": "^3.25.76"
+  }
 }

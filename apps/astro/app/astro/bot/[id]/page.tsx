@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import DSTabs from '@repo/design-system/tabs/tabs'
+import Agent from '../../../../common/Agent'
 
 interface BotProps {
   params: Promise<{id: string;}>;
@@ -25,6 +26,7 @@ export default async function Bot({ params }: BotProps) {
       children: (
         <div>
           <h3>Tab 1</h3>
+          <Agent/>
           {conent(id)}
         </div>
       ),
